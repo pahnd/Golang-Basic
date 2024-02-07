@@ -1,0 +1,22 @@
+
+go is a tool for managing Go source code.
+1. go run: it compiles and runs the application. It doesn't produce an executable
+- go run file.go compiles and immediately runs Go programs.
+
+
+2. go build: it just compiles the application. It produces an executable
+- go build file.go compile a bunch of Go source files. It compiles packages and dependencies.
+- If you run go build it will compile the files in the current directory and will produce an executable file with
+the name of the current working directory.
+- go build -o app will produce an executable file called app
+
+
+Compiling for Windows GOOS=windows GOARCH=amd64 go build -o winapp.exe
+Compiling for linux GOOS=linux GOARCH=amd64 go build -o winapp.exe
+Compiling for Mac GOOS=darwin GOARCH=amd64 go build -o macapp.exe
+
+3. go install 
+- Both go install and go build will compile the package in the current directory
+- If the package is main, go build will place the resulting executable in the current directory and go install will
+move the executable to GOPATH/bin
+- When running go install you use paths relative to GOPATH/src

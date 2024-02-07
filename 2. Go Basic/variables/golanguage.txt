@@ -1,0 +1,17 @@
+Function closure (hàm closure) trong Go là một khái niệm liên quan đến việc bao gồm một hàm và môi trường xung quanh nơi nó được khai báo. Hàm closure có khả năng ghi nhớ và truy cập các biến trong phạm vi xung quanh của nó, ngay cả khi hàm đã hoàn thành việc thực thi.
+
+Trong Go, một closure được tạo ra khi một hàm được khai báo trong một hàm khác và truy cập các biến của hàm bên ngoài phạm vi của nó. Khi hàm bên ngoài hoàn thành việc thực thi, closure vẫn có thể sử dụng và truy cập các biến mà nó đã ghi nhớ từ phạm vi bên ngoài.
+
+
+
+
+Function value (giá trị hàm) trong Go là khả năng xem và sử dụng hàm như một giá trị. Trong Go, hàm được coi là một loại dữ liệu và có thể được gán cho một biến, được chuyền như một đối số cho một hàm khác hoặc được trả về từ một hàm khác.
+
+Khi một hàm được gán cho một biến, biến đó trở thành một function value. Biến này có thể được sử dụng để gọi hàm tương ứng.
+
+
+
+
+Khác nhau giữa cách tạo bằng := và make() là cách khởi tạo giá trị ban đầu cho slice. Khi sử dụng :=, bạn cung cấp các giá trị ban đầu trong cú pháp ngay sau dấu :=. Trong khi đó, khi sử dụng make(), bạn chỉ cần xác định kiểu dữ liệu và kích thước của slice và giá trị ban đầu sẽ được thiết lập mặc định cho kiểu dữ liệu tương ứng (zero value của kiểu dữ liệu).
+Ngoài ra, khi sử dụng make(), bạn có thể chỉ định cả chiều dài (length) và khả năng chứa (capacity) của slice. Trong khi đó, khi sử dụng :=, chiều dài của slice được xác định dựa trên số lượng giá trị bạn cung cấp.
+
