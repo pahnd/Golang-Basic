@@ -22,6 +22,13 @@ func main() {
 	}
 	fmt.Println(accounts) //[0 0 50]
 
+	test := [...]string{
+		"test-1",
+		"test-2",
+		"test-3",
+	}
+	fmt.Println(len(test)) // -> 3
+
 	names := [...]string{
 		4: "Dan",
 	}
